@@ -1,0 +1,8 @@
+{
+  "name": "SK Concrete Floor Services",
+  "description": "Cape Town's trusted concrete contractor specializing in reinforced concrete stairs, concrete floor slabs, columns & foundations, and decking & driveways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
