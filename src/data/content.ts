@@ -1,4 +1,4 @@
-import { ServiceItem, ProjectMedia } from '../types/concrete';
+import { ServiceItem, ProjectMedia, ClientReview } from '../types/concrete';
 
 export const COMPANY_INFO = {
   name: "SK Concrete Floor Services",
@@ -211,23 +211,46 @@ export const CAPE_TOWN_SUBURBS = [
   "Industrial Areas (Epping, Airport Industria, Montague Gardens, Blackheath)"
 ];
 
-export const TESTIMONIALS = [
+export const GOOGLE_LINKS = {
+  searchReviews: "https://www.google.com/search?q=SK+Concrete+Floor+Services+Cape+Town+reviews",
+  mapsSearch: "https://www.google.com/maps/search/?api=1&query=SK+Concrete+Floor+Services+Cape+Town+Western+Cape"
+};
+
+export const INITIAL_REVIEWS: ClientReview[] = [
   {
+    id: "rev-hendrik",
     quote: "SK Concrete Floor Services poured the entire 1,800 m² warehouse slab for our distribution center in Montague Gardens. The laser leveling and power floated finish was flawless, passed structural inspection on the first round.",
     author: "Hendrik Van Zyl",
     role: "Project Director",
-    company: "Atlantic Logistics & Warehousing, Cape Town"
+    companyOrSuburb: "Atlantic Logistics & Warehousing, Montague Gardens",
+    serviceType: "Concrete Floor Slabs",
+    rating: 5,
+    date: "August 2026",
+    source: "Client Project"
   },
   {
+    id: "rev-nadia",
     quote: "We contracted SK for custom cantilevered reinforced concrete stairs and driveway slabs on two luxury builds in Camps Bay. Their steel reinforcement discipline and timber formwork craftsmanship are second to none.",
     author: "Nadia Petersen",
     role: "Principal Architect",
-    company: "Cape Contemporary Architecture"
+    companyOrSuburb: "Cape Contemporary Architecture, Camps Bay",
+    serviceType: "Reinforced Concrete Stairs",
+    rating: 5,
+    date: "September 2026",
+    source: "Client Project"
   },
   {
+    id: "rev-bongani",
     quote: "Called 0628067247 on a Monday morning for an urgent foundation footing and ground beam pour. They dispatched a supervisor that same afternoon with a free quote and completed the pour right on schedule.",
     author: "Bongani Sithole",
     role: "General Contractor",
-    company: "Apex Construction Cape Town"
+    companyOrSuburb: "Apex Construction, Bellville",
+    serviceType: "Columns & Foundations",
+    rating: 5,
+    date: "October 2026",
+    source: "Client Project"
   }
 ];
+
+export const TESTIMONIALS = INITIAL_REVIEWS;
+

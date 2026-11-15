@@ -1,6 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Award, Wrench, CheckCircle, Quote } from 'lucide-react';
-import { TESTIMONIALS, COMPANY_INFO } from '../data/content';
+import { ShieldCheck, Award, Wrench, CheckCircle } from 'lucide-react';
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -21,7 +20,7 @@ export const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-amber-500/50 transition-colors">
             <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4">
@@ -71,35 +70,6 @@ export const WhyChooseUs: React.FC = () => {
             </p>
           </div>
 
-        </div>
-
-        {/* Testimonials from Cape Town Projects */}
-        <div className="border-t border-zinc-800 pt-16">
-          <div className="text-xs font-semibold uppercase tracking-wider text-amber-500 mb-6">
-            Western Cape Client Testimonials
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t, idx) => (
-              <div 
-                key={idx} 
-                className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 flex flex-col justify-between"
-              >
-                <div>
-                  <Quote className="w-6 h-6 text-amber-500/40 mb-3" />
-                  <p className="text-xs text-zinc-300 leading-relaxed italic mb-6">
-                    "{t.quote}"
-                  </p>
-                </div>
-                
-                <div className="pt-4 border-t border-zinc-800/80">
-                  <div className="font-semibold text-sm text-white">{t.author}</div>
-                  <div className="text-xs text-amber-400">{t.role}</div>
-                  <div className="text-[11px] text-zinc-500">{t.company}</div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>

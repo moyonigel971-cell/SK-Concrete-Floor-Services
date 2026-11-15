@@ -7,6 +7,7 @@ import { GallerySection } from './components/GallerySection';
 import { Calculator } from './components/Calculator';
 import { CoverageSection } from './components/CoverageSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
+import { ReviewsSection } from './components/ReviewsSection';
 import { QuoteSection } from './components/QuoteSection';
 import { Footer } from './components/Footer';
 import { MediaModal } from './components/MediaModal';
@@ -52,8 +53,11 @@ export default function App() {
         {/* Cape Town & Western Cape Coverage */}
         <CoverageSection />
 
-        {/* Contractor Rigor & Testimonials */}
+        {/* Contractor Rigor */}
         <WhyChooseUs />
+
+        {/* Google & Client Reviews */}
+        <ReviewsSection />
 
         {/* Quote Request & Direct Hotline */}
         <QuoteSection />

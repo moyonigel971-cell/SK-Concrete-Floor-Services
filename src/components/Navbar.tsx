@@ -23,16 +23,16 @@ export const Navbar: React.FC = () => {
             Services
           </a>
           <a href="#projects" className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0">
-            Project Showcase
+            Projects
           </a>
           <a href="#calculator" className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0">
-            Cost Estimator
+            Estimator
           </a>
           <a href="#coverage" className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0">
-            Cape Town Coverage
+            Coverage
           </a>
-          <a href="#why-us" className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0">
-            Why Us
+          <a href="#reviews" className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0">
+            Reviews
           </a>
         </nav>
 
@@ -99,11 +99,11 @@ export const Navbar: React.FC = () => {
               Cape Town & Western Cape Service Areas
             </a>
             <a 
-              href="#why-us" 
+              href="#reviews" 
               onClick={() => setMobileMenuOpen(false)}
               className="py-1.5 hover:text-amber-400"
             >
-              Why Choose SK Concrete
+              Google & Client Reviews
             </a>
           </nav>
 

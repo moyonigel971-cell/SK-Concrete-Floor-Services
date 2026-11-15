@@ -35,3 +35,16 @@ export interface QuoteFormData {
   projectStage: string;
   notes: string;
 }
+
+export interface ClientReview {
+  id: string;
+  author: string;
+  role: string;
+  companyOrSuburb: string;
+  serviceType: string;
+  rating: number;
+  quote: string;
+  date: string;
+  source: 'Client Project' | 'Submitted Review';
+}
+
