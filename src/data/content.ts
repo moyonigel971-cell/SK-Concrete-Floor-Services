@@ -8,8 +8,9 @@ export const COMPANY_INFO = {
   phoneTel: "+27628067247",
   whatsappNumber: "27628067247",
   location: "Cape Town, Western Cape",
+  address: "12 Chandelle Complex, Buh Rein Drive, Kraaifontein",
   region: "Western Cape, South Africa",
-  email: "info@skconcretefloors.co.za",
+  email: "skconcretefloorservices@gmail.com",
   businessHours: "Monday – Saturday: 07:00 – 18:00 (Emergency Pours by Arrangement)",
   freeQuoteNotice: "Calls qualify for Free Quotes directly with our site supervisor"
 };

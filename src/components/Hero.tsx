@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Phone, MessageSquare, Play, Pause, Volume2, VolumeX, ShieldCheck, Check, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MessageSquare, Play, Pause, Volume2, VolumeX, ShieldCheck, Check, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 
 interface HeroProps {
@@ -83,6 +83,16 @@ export const Hero: React.FC<HeroProps> = () => {
                   <span className="text-emerald-400 font-medium block">All Calls Qualify For Free Quotes</span>
                   <span>On-site visits across Western Cape</span>
                 </div>
+              </div>
+              <div className="mt-3 pt-3 border-t border-zinc-800/80 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <a
+                  href={`mailto:${COMPANY_INFO.email}`}
+                  className="inline-flex items-center gap-2 text-zinc-300 hover:text-amber-400 transition-colors font-medium break-all"
+                >
+                  <Mail className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                  <span>{COMPANY_INFO.email}</span>
+                </a>
+                <span className="text-zinc-500">{COMPANY_INFO.address}</span>
               </div>
             </div>
 

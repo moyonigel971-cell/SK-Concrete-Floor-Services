@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageSquare, MapPin, Send, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Mail, Send, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 import { COMPANY_INFO, CAPE_TOWN_SUBURBS } from '../data/content';
 import { QuoteFormData } from '../types/concrete';
 
@@ -108,9 +108,18 @@ Notes: ${formData.notes || 'Please provide free quote & site visit availability.
 
             {/* Key Contact Details */}
             <div className="space-y-3 text-xs text-zinc-300">
+              <div className="flex items-start gap-3 p-3 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+                <span>{COMPANY_INFO.address}, {COMPANY_INFO.location}</span>
+              </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <MapPin className="w-4 h-4 text-amber-500 shrink-0" />
-                <span>Operating Base: {COMPANY_INFO.location}, South Africa</span>
+                <Mail className="w-4 h-4 text-amber-500 shrink-0" />
+                <a
+                  href={`mailto:${COMPANY_INFO.email}`}
+                  className="text-zinc-200 hover:text-amber-400 transition-colors break-all"
+                >
+                  {COMPANY_INFO.email}
+                </a>
               </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-zinc-900/60 border border-zinc-800">
                 <Clock className="w-4 h-4 text-amber-500 shrink-0" />
