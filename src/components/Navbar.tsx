@@ -11,9 +11,14 @@ export const Navbar: React.FC = () => {
         {/* Zone 1: Brand Wordmark (Single text element in display face) */}
         <a 
           href="#" 
-          className="text-xl sm:text-2xl font-bold font-display tracking-tight text-white hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-2"
+          className="text-xl sm:text-2xl font-bold font-display tracking-tight text-white hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-3"
         >
-          <span className="w-3 h-3 bg-amber-500 rounded-xs inline-block"></span>
+          <img
+            src={COMPANY_INFO.logoUrl}
+            alt={`${COMPANY_INFO.name} logo`}
+            referrerPolicy="no-referrer"
+            className="h-11 w-auto rounded-md object-contain shrink-0"
+          />
           <span>SK CONCRETE FLOOR SERVICES</span>
         </a>
 

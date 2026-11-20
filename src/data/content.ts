@@ -3,6 +3,7 @@ import { ServiceItem, ProjectMedia, ClientReview } from '../types/concrete';
 export const COMPANY_INFO = {
   name: "SK Concrete Floor Services",
   slogan: "Strength in Every Foundation",
+  logoUrl: "/assets/aistudio/WhatsApp_Image_2026-11-20_at_17.11.23_97abad2c.jpeg",
   phone: "0628067247",
   phoneFormatted: "062 806 7247",
   phoneTel: "+27628067247",

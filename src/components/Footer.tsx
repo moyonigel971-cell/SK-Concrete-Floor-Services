@@ -10,8 +10,13 @@ export const Footer: React.FC = () => {
           
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 bg-amber-500 rounded-xs inline-block"></span>
+            <div className="flex items-center gap-3">
+              <img
+                src={COMPANY_INFO.logoUrl}
+                alt={`${COMPANY_INFO.name} logo`}
+                referrerPolicy="no-referrer"
+                className="h-12 w-auto rounded-md object-contain shrink-0"
+              />
               <span className="text-xl font-bold font-display uppercase tracking-tight text-white">
                 {COMPANY_INFO.name}
               </span>
